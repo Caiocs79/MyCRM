@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+nav{
+	width:1400px;
+	margin: auto;
+}
+
+a#home{
+	margin-left: -100px;
+}
+
+div#corpo{
+	margin: auto;
+	width: 1400px;
+	padding: 40px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.6);
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 85%;
+	background-color: rgba(0,0,0,.05);
+	}
+
+input#nome, #end, #email{
+	width: 400px;
+}
+
+input#cpf, #cep, #bairro, #telefone{
+	width: 200px;
+}
+
+select#uf{
+	width:250px;
+}
+
+input#numero{
+	width: 100px;
+}
+
+input#pais, #tpDoc, #numDoc, #pl_saude{
+	width: 300px;
+}
+
+p#cpf{
+	position: relative;
+	margin-left: 430px;
+	margin-top: -77px;
+}
+
+p#gender{
+	position: relative;
+	margin-left: 650px;
+	margin-top: -63px;
+}
+
+p#cep{
+	position: relative;
+	margin-left: 770px;
+	margin-top: -93px;
+}
+
+p#uf{
+	position: relative;
+	margin-left: 1000px;
+	margin-top: -77px;
+}
+
+p#bairro{
+	position: relative;
+	margin-left: 430px;
+	margin-top: -77px;
+}
+
+p#numero{
+	position: relative;
+	margin-left: 650px;
+	margin-top: -77px;
+}
+
+p#telefone{
+	position: relative;
+	margin-left: 770px;
+	margin-top: -77px;
+}
+
+p#btTelefone{
+	position: relative;
+	margin-left: 980px;
+	margin-top: -55px;
+}	
+
+p#email, #pl_saude{
+	display: inline-block;
+}
+
+p#pl_saude{
+	margin-left: 27px;
+}
+
+p#pais, #tpDoc, #numDoc{
+	display: inline-block;
+	margin: 10px;
+}
+
+a#bt_cancelar{
+	margin-left: 10px;
+}

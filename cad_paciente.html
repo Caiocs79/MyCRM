@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta language="pt-br"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="_css/estilo.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css"> </head>
+
+<body>
+<nav id="menu" class="navbar navbar-expand-md bg-dark navbar-dark">
+  <div class="container">
+    <a id="home" class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="cad_paciente.html">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="con_marcadas.html">Consultas Marcadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Médicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+        </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn" type="submit">Search</button>
+          <a class="btn navbar-btn btn-primary ml-2 text-white"><i class="fa d-inline fa-lg fa-user-circle-o"></i> Login</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div id="corpo">
+  <form>
+    <fieldset><legend>Cadastro de paciente</legend>
+<p id"nome">Nome do paciente<input id="nome" type="text" class="form-control" maxlength="50"></p>
+<p id="cpf">CPF<input id="cpf" type="text" class="form-control" maxlength="15"></p>
+<p id="gender"><input id="masculino" type="radio" name="gender" value="male"><label for="masculino"> Masculino</label><br>
+               <input id="feminino" type="radio" name="gender" value="female"><label for="feminino"> Feminino</label></p>
+<p id="cep">CEP<input id="cep" type="text" class="form-control" maxlenght="11"/></p>
+<p id="uf">UF<select id="uf" name="_sft_post_tag" class="form-control" type="dropdrown" style="background: url('https://www.jobbol.com.br/imagens/location.png') left no-repeat; padding-left:30px; ">
+				<option value="">Localização...</option>
+				<option value="sp">São Paulo</option>
+				<option value="rj">Rio de Janeiro</option>
+				<option value="mg">Minas Gerais</option>
+				<option value="pr">Paraná</option>
+				<option value="df">Distrito Federal</option>
+				<option value="bh">Bahia</option>
+				<option value="ce">Ceará</option>
+				<option value="rs">Rio Grande do Sul</option>
+				<option value="pe">Pernambuco</option>
+				<option value="am">Amazonas</option>
+				<option value="sc">Santa Catarina</option>
+				<option value="pa">Pará</option>
+				<option value="go">Goiás</option>
+				<option value="ma">Maranhão</option>
+				<option value="pb">Paraíba</option>
+				<option value="al">Alagoas</option>
+				<option value="pi">Piauí</option>
+				<option value="mt">Mato Grosso</option>
+				<option value="rr">Roraima</option>
+				<option value="ro">Rondônia</option>
+				<option value="es">Espírito Santo</option>
+				<option value="ms">Mato Grosso do Sul</option>
+				<option value="rn">Rio Grande do Norte</option>
+				<option value="to">Tocantins</option>
+				<option value="se">Sergipe</option>
+				<option value="ap">Amapá</option>
+				<option value="ac">Acre</option>
+      </select></P>
+<p id="end">Endereço<input id="end" type="text" class="form-control" maxlength="150"></P>
+<p id="bairro">Bairro<input id="bairro" type="text" class="form-control"></p>
+<p id="numero">Número<br><input id="numero" type="text" class="form-control"></p>
+<p id="telefone">Telefone<input id="telefone" type="text" class="form-control" maxlenght="15"></p>
+<p id="btTelefone"><a id="addTelefone" class="btn btn-success" href="#">+</a></p>
+<p id="email">Email<input id="email" type="email" class="form-control"></p>
+<p id="pl_saude">Plano de saúde<br><input id="pl_saude" type="text" class="form-control"></p>
+</fieldset>
+
+<fieldset><legend>Estrangeiro</legend>
+  <p id="pais">País<input id="pais" type="text" class="form-control" maxlength="50"></p>
+  <p id="tpDoc">Tipo de documento<input id="tpDoc" type="text" class="form-control" maxlength="30"></p>
+  <p id="numDoc">Número do documento<input id="numDoc" type="text" class="form-control" maxlength="50"></p><br>
+  <a id="bt_cancelar" class="btn btn-primary" href="#">Cancelar</a>
+  <a id="bt_salvar" class="btn btn-success" href="#">Salvar cadastro</a>
+</fieldset>
+</form>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
