@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <meta language="pt-br"/>
-  <title>Cadastro de paciente</title>
+<meta language="pt-br"/>
+  <title>Cadastro de médicos</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="_css/estilo.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +21,8 @@
           <!--Menu dropdown cadastro-->
           <li id="cadastrar" class="nav-item"><a class="nav-link active, dropdown-toggle" data-toggle="dropdown" href="#">Cadastrar<span class="caret"></span></a>
             <ul id="menu_cadastrar" class="dropdown-menu">
-              <li class="nav-item active"><a href="cad_paciente.html">Pacientes</a></li>
-              <li class="nav-item"><a href="cad_medico.html">Médicos</a></li>
+              <li class="nav-item"><a href="cad_paciente.html">Pacientes</a></li>
+              <li class="nav-item active"><a href="cad_medico.html">Médicos</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="con_marcadas.html">Consultas Marcadas</a></li>
@@ -39,9 +39,9 @@
   </nav>
 
 <div id="corpo">
-  <form id="cad_paciente">
-    <fieldset><legend>Cadastro de paciente</legend>
-      <p id"nome">Nome do paciente<input id="nome" type="text" class="form-control" maxlength="50"></p>
+  <form id="cad_medico">
+    <fieldset><legend>Cadastrar médico</legend>
+      <p id"nome">Nome<input id="nome" type="text" class="form-control" maxlength="50"></p>
       <p id="cpf">CPF<input id="cpf" type="text" class="form-control" maxlength="15"></p>
       <p id="gender"><input id="masculino" type="radio" name="gender" value="male"><label for="masculino"> Masculino</label>
                      <input id="feminino" type="radio" name="gender" value="female"><label for="feminino"> Feminino</label></p>
@@ -81,15 +81,14 @@
 				<option value="ap">Amapá</option>
 				<option value="ac">Acre</option>
       </select></P>
-      <p id="pl_saude">Plano de saúde<br><input id="pl_saude" type="text" class="form-control"></p>
-      <p id="email">Email<input id="email" type="email" class="form-control"></p>
+      <p id="email-medico">Email<br><input id="email" type="email" class="form-control"></p>
     </fieldset>
     <br>
 
-    <fieldset><legend>Estrangeiro</legend>
-      <p id="pais">País<input id="pais" type="text" class="form-control" maxlength="50"></p>
-      <p id="tpDoc">Tipo de documento<input id="tpDoc" type="text" class="form-control" maxlength="30"></p>
-      <p id="numDoc">Número do documento<input id="numDoc" type="text" class="form-control" maxlength="50"></p><br>
+    <fieldset><legend>Especializações</legend>
+      <p id="espec">Especialidade<input id="pais" type="text" class="form-control" maxlength="50"></p>
+      <p id="crm">CRM<br><input id="tpDoc" type="text" class="form-control" maxlength="30"></p>
+      <a id="bt_add" class="btn btn-success" href="#">Adicionar especialização</a><br>
       <a id="bt_cancelar" class="btn btn-primary" href="#">Cancelar</a>
       <a id="bt_salvar" class="btn btn-success" href="#">Salvar cadastro</a>
     </fieldset>
